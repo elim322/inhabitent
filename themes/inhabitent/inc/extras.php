@@ -27,3 +27,18 @@ function inhabitent_remove_submenus() {
 	remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
 }
 add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
+
+// change login screen 
+function inhabitent_change_login() {
+	echo '<style type="text/css">
+	h1 a {background-image: url("' . get_stylesheet_directory_uri() . '/logos/inhabitent-logo-text-dark.svg") !important; margin:0 auto;}
+	</style>';
+}
+add_action( 'login_head', 'inhabitent_change_login');
+
+// change login url
+
+function inhabitent_change_login_url($url) {
+	return home_url();
+}
+add_filter('login_headerurl', 'inhabitent_change_login_url');
