@@ -9,6 +9,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<section class="home-logo">
+				<img src="/Applications/MAMP/htdocs/inhabitent/wp-content/themes/inhabitent/logos" alt="inhabitent-logo">
+			</section>
+			
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

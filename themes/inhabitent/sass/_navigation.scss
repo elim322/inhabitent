@@ -28,7 +28,8 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
+	justify-content: space-between; 
 	float: left;
 	width: 100%;
 
@@ -130,3 +131,4 @@ a {
 		width: 50%;
 	}
 }
+
