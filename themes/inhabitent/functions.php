@@ -89,7 +89,7 @@ function red_starter_scripts() {
 
 	//add font awesome - find CDN 
 	// then add enqueue scripts or styles 
-	wp_enqueue_script( 'font-awesome-icons', 'https://use.fontawesome.com/releases/v5.2.0/js/all.js', array(), true );
+	wp_enqueue_style( 'font-awesome-icons', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

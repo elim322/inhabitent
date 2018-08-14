@@ -13,15 +13,11 @@
 				<div class="contact">
 				<h1 class="contact-info">CONTACT INFO</h1>
 				<p>
-					<i class="far fa-envelope">
-						::before
-					</i> 
+				<i class="fas fa-envelope"></i>
 				<a href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 				</p>
 				<p>
-					<i class="fa fa-phone">
-						::before
-					</i>
+					<i class="fa fa-phone fa-rotate-90"></i>
 				<a href="tel:5553434567891">778-456-7891</a>
 				</p>
 				</div>
