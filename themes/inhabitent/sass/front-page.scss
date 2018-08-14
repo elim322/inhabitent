@@ -8,12 +8,11 @@
 
 .cover {
   background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url("../../images/home-hero.jpg") no-repeat top;
-  background-size: cover; 
-  width: 100%;
+  background-size: cover, cover; 
   height: 100vh; 
   .hero-logo {    
-    margin-left: 40%; 
-    margin-top: 8%; 
+    margin-left: 41.5%; 
+    margin-top: 17%; 
     height: 250px;
     width: 250px;
   }

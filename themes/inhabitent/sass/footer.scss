@@ -5,6 +5,11 @@
   color: #fff;
   display: flex; 
   flex-wrap: wrap; 
+  font-family: 'Merriweather', sans-serif;
+  a {
+    color: #fff;
+    text-decoration: none; 
+  }
   .business {
     width: 25%; 
     padding-right: 1.5rem; 
@@ -19,9 +24,6 @@
     margin-left: 10%;
     .contact-info {
       color: #d99054;
-    }
-    .email {
-      text-decoration: none; 
     }
   }
   .footer-logo {

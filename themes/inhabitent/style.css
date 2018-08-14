@@ -225,6 +225,42 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("5c727f224dff44b8981e724e58f88706.woff2") format("woff2"), url("5c727f224dff44b8981e724e58f88706.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: '.';
+  src: url("4f80e0bc77ffd5863a49e818ad2b35ce.woff2") format("woff2"), url("4f80e0bc77ffd5863a49e818ad2b35ce.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-LightItalic.woff2") format("woff2"), url("Merriweather-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -711,7 +747,11 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  font-family: 'Merriweather', sans-serif; }
+  .site-footer a {
+    color: #fff;
+    text-decoration: none; }
   .site-footer .business {
     width: 25%;
     padding-right: 1.5rem;
@@ -724,8 +764,6 @@ object {
     margin-left: 10%; }
     .site-footer .contact .contact-info {
       color: #d99054; }
-    .site-footer .contact .email {
-      text-decoration: none; }
   .site-footer .footer-logo {
     margin-top: 5%; }
 
@@ -743,11 +781,10 @@ object {
 .cover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat top;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url("../../images/home-hero.jpg") no-repeat top;
-  background-size: cover;
-  width: 100%;
+  background-size: cover, cover;
   height: 100vh; }
   .cover .hero-logo {
-    margin-left: 40%;
-    margin-top: 8%;
+    margin-left: 41.5%;
+    margin-top: 17%;
     height: 250px;
     width: 250px; }

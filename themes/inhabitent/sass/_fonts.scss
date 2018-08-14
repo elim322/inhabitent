@@ -1,3 +1,50 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Light.woff2') format('woff2'),
+      url('Merriweather-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '.';
+  src: url('5c727f224dff44b8981e724e58f88706.woff2') format('woff2'),
+      url('5c727f224dff44b8981e724e58f88706.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-Bold.woff2') format('woff2'),
+      url('Merriweather-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '.';
+  src: url('4f80e0bc77ffd5863a49e818ad2b35ce.woff2') format('woff2'),
+      url('4f80e0bc77ffd5863a49e818ad2b35ce.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-LightItalic.woff2') format('woff2'),
+      url('Merriweather-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('Merriweather-BoldItalic.woff2') format('woff2'),
+      url('Merriweather-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
