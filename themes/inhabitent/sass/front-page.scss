@@ -1,0 +1,20 @@
+/* reverse header */
+.site-header .reverse-header {
+  background-color: transparent; 
+  border-bottom: 0; 
+  position: absolute; 
+  text-shadow: 1px 1px 2px #323232; 
+}
+
+.cover {
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696 url("../../images/home-hero.jpg") no-repeat top;
+  background-size: cover; 
+  width: 100%;
+  height: 100vh; 
+  .hero-logo {    
+    margin-left: 40%; 
+    margin-top: 8%; 
+    height: 250px;
+    width: 250px;
+  }
+}

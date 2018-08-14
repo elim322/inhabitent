@@ -12,7 +12,7 @@
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="contact">
 				<h1 class="contact-info">CONTACT INFO</h1>
-				<a class="email" href="mailto:info@inhabitent.com">info@inhabitent.com</a>
+				<a class="email " href="mailto:info@inhabitent.com">info@inhabitent.com</a>
 				<p>778-456-7891</p>
 				</div>
 				<div class="business">

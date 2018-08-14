@@ -25,13 +25,14 @@ a {
 }
 
 /* Menus */
+.container {
+	width: 1000px;
+	margin-left: auto; 
+	margin-right: auto; 
+}
 
 .main-navigation {
-	clear: both;
-	display: flex;
-	justify-content: space-between; 
-	float: left;
-	width: 100%;
+	display: flex; 
 
 	ul {
 		display: none;
@@ -80,6 +81,7 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding-left: 1.5rem; 
 
 		&:hover > a,
 		&.focus > a {
@@ -93,6 +95,15 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
+	}
+	 img {
+		height: 25px;
+		width: 25%; 
+	}
+	.menu {
+		display: flex; 
+		justify-content: space-between; 
+		margin-left: 40%;
 	}
 }
 
@@ -132,3 +143,8 @@ a {
 	}
 }
 
+.menu-menu-1-container ul {
+	width: 550px;
+
+
+}

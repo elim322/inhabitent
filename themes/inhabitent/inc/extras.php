@@ -31,7 +31,7 @@ add_action( 'admin_menu', 'inhabitent_remove_submenus', 110 );
 // change login screen 
 function inhabitent_change_login() {
 	echo '<style type="text/css">
-	h1 a {background-image: url("' . get_stylesheet_directory_uri() . '/logos/inhabitent-logo-text-dark.svg") !important; margin:0 auto;}
+	h1 a {background-image: url("' . get_stylesheet_directory_uri() . '/logos/inhabitent-logo-text-dark.svg") !important; height: 58px !important; width: 320px !important;  background-size: 320px !important; margin 25px auto;}
 	</style>';
 }
 add_action( 'login_head', 'inhabitent_change_login');
