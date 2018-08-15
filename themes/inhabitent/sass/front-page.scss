@@ -17,3 +17,19 @@
     width: 250px;
   }
 }
+
+
+.site-content .featured-posts {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.site-content .featured-posts .post {
+  width: 33%;
+  height: 500px; 
+  margin-top: 5px; 
+  text-align: center; 
+
+}
