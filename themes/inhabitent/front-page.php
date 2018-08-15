@@ -16,12 +16,13 @@ get_header()?>
    $arg = array( 'taxonomy' => 'product_type');
    $shop_stuff = get_terms( $arg ); // returns an array of posts
 ?>
+<h1 class="shop-title">SHOP STUFF</h1>
 <div class="shop-stuff">
 <?php foreach ( $shop_stuff as $term ): ?>
 <div class="stuff">
-<h1><?php echo $term->name ?></h1>
 <img src="<?php echo get_template_directory_uri()?>/product-type-icons/<?php echo $term->name?>.svg">
-<?php echo $term->description?>
+<p><?php echo $term->description?></p>
+<a href="<?php get_term_link('$term->slug')?>" class="btn"><?php echo $term->name ?></a>
 </div>
 
 <?php endforeach; ?>
