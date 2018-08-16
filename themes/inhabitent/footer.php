@@ -20,6 +20,11 @@
 					<i class="fa fa-phone fa-rotate-90"></i>
 				<a href="tel:5553434567891">778-456-7891</a>
 				</p>
+				<p>
+				<i class="fab fa-facebook-square"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-google-plus-square"></i>
+				</p>
 				</div>
 				<div class="business">
 				<h1 class="business-hours">BUSINESS HOURS</h1>

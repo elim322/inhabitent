@@ -723,6 +723,8 @@ object {
   .site-footer a {
     color: #fff;
     text-decoration: none; }
+  .site-footer p {
+    margin-bottom: 0; }
   .site-footer .business {
     width: 25%;
     font-size: .7rem;
@@ -763,6 +765,17 @@ object {
     height: 250px;
     width: 250px; }
 
+.entries-title {
+  text-align: center; }
+
+.latest-entries .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.latest-entries .featured-posts {
+  margin: 0; }
+
 .site-content .featured-posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -775,13 +788,33 @@ object {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
-.shop-title {
-  text-align: center; }
-
 .site-content .featured-posts .post {
   width: 33%;
   height: 500px;
   margin-top: 5px;
+  font-size: 16px;
+  text-decoration: none; }
+
+.home .latest-entries .wp-post-image {
+  max-height: 250px;
+  max-width: 300px;
+  width: auto; }
+
+.home .latest-enteries .post .post-info-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .75rem;
+  text-decoration: none; }
+
+.home .latest-entries .featured-posts {
+  list-style-type: none; }
+
+.shop-title {
   text-align: center; }
 
 .site-content .shop-stuff {
