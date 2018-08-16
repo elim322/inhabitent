@@ -35,27 +35,24 @@ get_header()?>
    $args = array( 'post_type' => 'post', 'order' => 'ASC', 'numberposts' => 3 );
    $journal_posts = get_posts( $args ); // returns an array of posts
 ?>
-<section class="latest-entries">
-  <div class="container">
+<section class="latest-entries container">
   <h1 class="entries-title">INHABITENT JOURNAL</h1>
 <ul class="featured-posts">
 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 <li class="post">
       <?php the_post_thumbnail() ?>
-    <div class="post-info-wrapper">
-      <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> 
-      <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3>
-      <input class="button" type="button" value="READ ENTRY"></a>
-    </div>
+      <p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p> 
+      <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+      <a class="black-btn" href="<?php the_permalink(); ?>">READ ENTRY</a>
 </li>
 
 
     
 
 <?php endforeach; wp_reset_postdata(); ?>
+</div>
 </ul>
-</div>
-</div>
+
 </section>
 
 

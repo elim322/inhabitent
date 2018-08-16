@@ -225,6 +225,39 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+/* Novocento */
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot");
+  src: url("../../fonts/novecentosanswide-normal-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-normal-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Novecento Sans Web';
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot");
+  src: url("../../fonts/novecentosanswide-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novecentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novecentosanswide-demibold-webfont.ttf") format("truetype"), url("../../fonts/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -711,6 +744,33 @@ object {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
+.entry-header.hero-image-header {
+  height: 100vh; }
+
+h1.entry-title {
+  color: #fff; }
+
+.page-template-about .entry-content > :not(header) {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; }
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.product-grid-item .wp-post-image {
+  left: 50%;
+  max-height: 250px;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -52%);
+          transform: translate(-50%, -52%);
+  width: auto; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #fff;
@@ -771,10 +831,12 @@ object {
 .latest-entries .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1120px; }
+  width: 1120px;
+  padding-right: 55px; }
 
-.latest-entries .featured-posts {
-  margin: 0; }
+.featured-posts {
+  margin: 0;
+  padding: 0; }
 
 .site-content .featured-posts {
   display: -webkit-box;
@@ -789,27 +851,41 @@ object {
           justify-content: space-between; }
 
 .site-content .featured-posts .post {
-  width: 33%;
-  height: 500px;
+  max-width: 300px;
+  height: 400px;
   margin-top: 5px;
   font-size: 16px;
-  text-decoration: none; }
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  margin-left: 5px; }
+  .site-content .featured-posts .post h3 {
+    text-decoration: none; }
+
+.post a {
+  text-decoration: none;
+  color: #248a83; }
 
 .home .latest-entries .wp-post-image {
   max-height: 250px;
   max-width: 300px;
-  width: auto; }
+  width: auto;
+  border-bottom: 1px solid #e1e1e1;
+  border-bottom-width: 5px; }
 
-.home .latest-enteries .post .post-info-wrapper {
+.home .latest-enteries .post {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: .75rem;
   text-decoration: none; }
+
+.black-btn {
+  border: 1px solid black;
+  bottom: .75rem;
+  margin-left: .75rem;
+  padding: .75rem 1.5rem;
+  color: #000; }
 
 .home .latest-entries .featured-posts {
   list-style-type: none; }

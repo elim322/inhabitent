@@ -14,13 +14,6 @@ get_header(); ?>
 	
 			<header class="page-header">
 			<h1>SHOP STUFF</h1>
-			<?php
-			$arg = array( 'taxonomy' => 'product_type');
-			$shop_stuff = get_terms( $arg ); // returns an array of posts
-			?>
-			<?php foreach ( $shop_stuff as $term ): ?>
-			<a href="<?php  echo get_term_link($term)?>"><?php echo $term->name ?></a>
-			<?php endforeach; ?>
 			</header><!-- .page-header -->
 			<div class="product-grid">
 			<?php /* Start the Loop */ ?>

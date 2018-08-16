@@ -42,3 +42,14 @@ function inhabitent_change_login_url($url) {
 	return home_url();
 }
 add_filter('login_headerurl', 'inhabitent_change_login_url');
+
+//increase products to 16
+function change_number_of_products($query) {
+	if (is_post_type_archive('product')) {
+		//display 16 posts for a custom post type for products
+		$query->set('posts_per_page', 16);
+		return;
+	}
+}
+
+add_action( 'pre_get_posts', 'change_number_of_products' );
