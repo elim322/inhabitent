@@ -227,19 +227,29 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Light.woff2") format("woff2"), url("Merriweather-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url("Merriweather-BoldItalic.woff2") format("woff2"), url("Merriweather-BoldItalic.woff") format("woff");
+  src: url("../../fonts/Merriweather-BoldItalic.eot");
+  src: url("../../fonts/Merriweather-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-BoldItalic.woff2") format("woff2"), url("../../fonts/Merriweather-BoldItalic.ttf") format("truetype"), url("../../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Merriweather';
-  src: url("Merriweather-Bold.woff2") format("woff2"), url("Merriweather-Bold.woff") format("woff");
+  src: url("../../fonts/Merriweather-LightItalic.eot");
+  src: url("../../fonts/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-LightItalic.woff2") format("woff2"), url("../../fonts/Merriweather-LightItalic.ttf") format("truetype"), url("../../fonts/Merriweather-LightItalic.svg#Merriweather-LightItalic") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Light.eot");
+  src: url("../../fonts/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Light.woff2") format("woff2"), url("../../fonts/Merriweather-Light.ttf") format("truetype"), url("../../fonts/Merriweather-Light.svg#Merriweather-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url("../../fonts/Merriweather-Bold.eot");
+  src: url("../../fonts/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Merriweather-Bold.woff2") format("woff2"), url("../../fonts/Merriweather-Bold.ttf") format("truetype"), url("../../fonts/Merriweather-Bold.svg#Merriweather-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -461,56 +471,55 @@ a {
 
 /* Menus */
 .container {
-  width: 1000px;
+  width: 1120px;
   margin-left: auto;
   margin-right: auto; }
 
-.main-navigation {
+.main-navigation ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0; }
+  .main-navigation ul ul {
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 1.5rem;
+    left: -999rem;
+    z-index: 99999; }
+    .main-navigation ul ul ul {
+      left: -999rem;
+      top: 0; }
+    .main-navigation ul ul li:hover > ul,
+    .main-navigation ul ul li.focus > ul {
+      left: 100%; }
+  .main-navigation ul li:hover > ul,
+  .main-navigation ul li.focus > ul {
+    left: auto; }
+
+.main-navigation li {
+  float: left;
+  position: relative;
+  padding-left: 1.5rem; }
+
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  color: #fff; }
+
+.main-navigation .menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative;
-    padding-left: 1.5rem; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none;
-    color: #fff; }
-  .main-navigation .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-left: 90%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
-  .main-navigation .tent-logo a img {
-    height: 25px;
-    width: 50px; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); }
+
+.main-navigation .tent-logo a img {
+  height: 25px;
+  width: 20%; }
 
 /* Small menu. */
 .menu-toggle,
@@ -542,16 +551,42 @@ a {
   text-align: right;
   width: 50%; }
 
-.menu-menu-1-container ul {
-  width: 450px; }
-
-input {
-  width: 0;
-  border: 0;
-  display: none; }
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto; }
+  .main-navigation .menu_item a {
+    padding: 15px;
+    text-transform: uppercase;
+    color: white; }
+  .main-navigation .menu_item a:active {
+    color: white; }
+  .main-navigation .search-input {
+    display: none; }
+    .main-navigation .search-input input {
+      background-color: rgba(255, 255, 255, 0);
+      border: none;
+      width: 100px; }
 
 .fa-search {
-  color: #fff; }
+  padding-top: 10px;
+  color: white; }
+
+.tent-logo {
+  height: 33px;
+  margin-right: 10%;
+  overflow: hidden;
+  white-space: nowrap; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -726,14 +761,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .site-header {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid #e1e1e1;
   padding: .5rem 0;
   position: fixed;
   -webkit-transition: top .5s linear;
   transition: top .5s linear;
   width: 100%;
   z-index: 3; }
-  .site-header container {
+  .site-header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -745,31 +781,63 @@ object {
             justify-content: space-between; }
 
 .entry-header.hero-image-header {
-  height: 100vh; }
+  height: 100vh;
+  margin-top: -45px; }
 
 h1.entry-title {
-  color: #fff; }
+  color: #fff;
+  font-size: 3rem; }
 
-.page-template-about .entry-content > :not(header) {
+.page-template-about .entry-content h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Novecento Sans Web', serif;
+  text-transform: uppercase; }
+
+.page-template-about .entry-content p {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px; }
+  max-width: 800px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.75;
+  font-size: 1rem; }
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%; }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  margin-bottom: 1.5rem; }
+  grid-gap: 20px;
+  margin-bottom: 1.5rem;
+  margin-left: 5%;
+  margin-right: 5%; }
 
-.product-grid-item .wp-post-image {
-  left: 50%;
-  max-height: 250px;
-  max-width: none;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(-50%, -52%);
-          transform: translate(-50%, -52%);
-  width: auto; }
+.product-grid-items {
+  border: 1px solid #e1e1e1; }
+
+.size-large {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 5px solid #e1e1e1; }
+
+.product-info {
+  text-align: center; }
+  .product-info h2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px; }
+
+.page-header h1 {
+  text-align: center; }
 
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");

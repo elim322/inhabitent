@@ -91,6 +91,11 @@ function red_starter_scripts() {
 	// then add enqueue scripts or styles 
 	wp_enqueue_style( 'font-awesome-icons', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 
+	//add jquery 
+	wp_enqueue_script( 'inhabitent-scripts', get_template_directory_uri() . '/js/inhabitent-script.js', array( 'jquery' ), '1.0.0', true );
+		
+	
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

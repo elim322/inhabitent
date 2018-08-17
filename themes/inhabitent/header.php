@@ -29,15 +29,16 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="tent-logo">
-					<a href="http://localhost:3000/inhabitent/"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-tent-white.svg"></a>
+					<a href="<?php echo home_url() ?>"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-tent-white.svg"></a>
 				</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<form class="search"> 
-						<input type="text">
+					<div class="form-search">
+					<form class="search">
 						<i class="fas fa-search" href="#"></i>
-						</input>
+						<input class="search-input" type="text"></input>
 						</form>
+					</div>
 				</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->

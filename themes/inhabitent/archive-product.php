@@ -13,39 +13,34 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 	
 			<header class="page-header">
+				<div class="container">
 			<h1>SHOP STUFF</h1>
 			<?php
 			$arg = array( 'taxonomy' => 'product_type');
 			$shop_stuff = get_terms( $arg ); // returns an array of posts
 			?>
+			<div class="links">
 			<?php foreach ( $shop_stuff as $term ): ?>
-			<a href="<?php  echo get_term_link($term)?>"><?php echo $term->name ?></a>
+			<a href="<?php echo get_term_link($term)?>"><?php echo $term->name ?></a>
 			<?php endforeach; ?>
+			</div>
 			</header><!-- .page-header -->
 			<div class="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="product-grid-items">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
+		<a href="<?php the_permalink(); ?>">
 			<?php the_post_thumbnail( 'large' ); ?>
+</a>
 		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<div class="entry-price">
-	<?php echo CFS()->get( 'price' ); ?>
+<div class="product-info">
+		<p><?php the_title(); ?> ............... <?php echo CFS()->get( 'price' ); ?></p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-
+</div>
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
@@ -56,7 +51,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 		</div>
-
+		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
