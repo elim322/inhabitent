@@ -54,8 +54,31 @@ get_header()?>
 </ul>
 
 </section>
+<h2 class="adventures-title">Latest Adventures</h2>
+<section class="adventures container"> 
+<div class="canoe">
+  <div class="canoe-image">
+  <h3>A girl paddling a canoe Getting Back to Nature in a Canoe</h3>
+      <a class="black-btn1" href="<?php the_permalink(); ?>">READ ENTRY</a>
+  </div>
+  <a class="adventures-button" href="#">MORE ADVENTURES</a>
+</div>
+<div class="column2">
+  <div class="night-friends">
+  <h3>A Night with Friends at the Beach</h3>
+      <a class="black-btn1" href="<?php the_permalink(); ?>">READ ENTRY</a>
+  </div>
+  <div class="big-mountain">
+  <h3>Taking in the View at Big Mountain</h3>
+      <a class="black-btn1" href="<?php the_permalink(); ?>">READ ENTRY</a>
+  </div>
+  <div class="star-gazing">
+  <h3>Star-Gazing at the Night Sky</h3>
+      <a class="black-btn1" href="<?php the_permalink(); ?>">READ ENTRY</a>
+  </div>
+</div>
 
-
+</section>
 <?php get_footer(); ?>
 
 
