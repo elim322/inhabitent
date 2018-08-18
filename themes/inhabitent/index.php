@@ -13,19 +13,23 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
+			<div class="journal-body">
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
+		
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<div class="journal-only">
 				<?php get_template_part( 'template-parts/content' ); ?>
+			</div>
 
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
+
 
 		<?php else : ?>
 
@@ -33,8 +37,11 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		</div> <!-- end journal content --> 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

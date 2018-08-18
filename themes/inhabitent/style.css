@@ -782,7 +782,7 @@ object {
 
 .entry-header.hero-image-header {
   height: 100vh;
-  margin-top: -45px; }
+  margin-top: -23px; }
 
 h1.entry-title {
   color: #fff;
@@ -846,6 +846,56 @@ h1.entry-title {
 .page-header h1 {
   text-align: center; }
 
+.journal-body {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.journal-only {
+  width: 73%; }
+  .journal-only .entry-header {
+    position: relative; }
+  .journal-only img {
+    height: auto;
+    max-width: 100%; }
+  .journal-only .entry-title {
+    background-color: #248a83;
+    color: #fff;
+    font-size: 33.6px;
+    font-size: 2.1rem;
+    left: 0;
+    padding: .75rem 1.5rem;
+    position: absolute;
+    margin-top: 2.25rem;
+    max-width: 75%;
+    top: 0; }
+  .journal-only .post a {
+    color: #fff;
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase; }
+  .journal-only a:hover {
+    color: #EEE4D3; }
+  .journal-only .entry-meta {
+    background-color: #248a83;
+    bottom: 12px;
+    color: #fff;
+    display: inline-block;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: 1.00005rem 1.5rem;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase; }
+  .journal-only p {
+    font-family: 'Merriweather Web', serif; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #fff;
@@ -885,10 +935,11 @@ h1.entry-title {
   font-size: .7rem; }
 
 /* reverse header */
-.site-header .reverse-header {
-  background-color: transparent;
+.reverse-header {
+  background-color: white;
   border-bottom: 0;
-  position: absolute;
+  color: #248a83;
+  position: fixed;
   text-shadow: 1px 1px 2px #323232; }
 
 .cover {
@@ -903,7 +954,10 @@ h1.entry-title {
     width: 250px; }
 
 .entries-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .latest-entries .container {
   margin-left: auto;
@@ -968,7 +1022,10 @@ h1.entry-title {
   list-style-type: none; }
 
 .shop-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .site-content .shop-stuff {
   display: -webkit-box;
@@ -1003,9 +1060,11 @@ h1.entry-title {
     font-size: 14.4px;
     font-size: .9rem;
     line-height: 1;
-    padding: .75rem 1.5rem;
+    padding: .75rem 2rem;
     text-decoration: none;
     text-transform: uppercase; }
+    .site-content .shop-stuff .stuff .btn:hover {
+      background: #30615D; }
 
 .product-info .container {
   margin-left: auto;
@@ -1013,7 +1072,10 @@ h1.entry-title {
   width: 1120px; }
 
 .adventures-title {
-  text-align: center; }
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .adventures {
   display: -webkit-box;
@@ -1038,6 +1100,8 @@ h1.entry-title {
     margin-left: 10px;
     text-decoration: none;
     text-transform: uppercase; }
+    .adventures .black-btn1:hover {
+      background-color: #248a83; }
   .adventures .canoe {
     height: 600px;
     width: 50%; }
