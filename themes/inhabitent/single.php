@@ -13,13 +13,25 @@ get_header(); ?>
 				<img src="/Applications/MAMP/htdocs/inhabitent/wp-content/themes/inhabitent/logos" alt="inhabitent-logo">
 			</section>
 			
-
+		<div class="single-posts-body">
 		<?php while ( have_posts() ) : the_post(); ?>
-
+		<div class="single-posts-content">
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
+		</div>
+<div class="social-buttons">
+	<button type="button" class="single-page-btn">
+	<i class="fab fa-facebook-f"></i>
+		LIKE
+</button>
+<button type="button" class="single-page-btn">
+	<i class="fab fa-twitter"></i>
+		TWEET
+</button>
+<button type="button" class="single-page-btn">
+	<i class="fab fa-pinterest"></i>
+		PIN
+</button>
+</div> <!-- end special buttons --> 
 			<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
@@ -28,7 +40,7 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // End of the loop. ?>
-
+			</div> <!-- end of single posts body --> 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
