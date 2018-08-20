@@ -85,7 +85,7 @@ a {
 	a {
 		display: block;
 		text-decoration: none;
-		color: #fff;
+		color: #248a83;
 	}
 
 	.current_page_item > a,
@@ -151,13 +151,14 @@ a {
   .menu_item a {
     padding: 15px;
     text-transform: uppercase;
-    color: white; 
+    color: white;  
   }
   .menu_item a:active {
     color: white; 
   }
   .search-input {
-		display: none; 
+		width: 0px;  
+		border: 0; 
     input {
       background-color: rgba(255,255,255,0);
       border: none;
@@ -165,9 +166,13 @@ a {
     }
   }
 }
+.show {
+	width: 200px; 
+	height: 30px; 
+}
 .fa-search {
 	padding-top: 10px;
-	color: white;
+	color: #248a83;
 }
 .tent-logo {
 	height: 33px;

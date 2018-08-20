@@ -10,35 +10,31 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+
 		<?php if ( have_posts() ) : ?>
 	
-			<header class="page-header">
-			<h1>SHOP STUFF</h1>
+			<header class="page-header container">
+			<h1 class="page-title taxonomy-product-title"><?php single_term_title(); ?></h1>
+			<?php the_archive_description(); ?>
 			</header><!-- .page-header -->
 			<div class="product-grid">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="product-grid-items">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
+		<a href="<?php the_permalink(); ?>">
 			<?php the_post_thumbnail( 'large' ); ?>
+		</a>
 		<?php endif; ?>
-
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
+		<div class="product-info">
+		<p><?php the_title(); ?> ............... <?php echo CFS()->get( 'price' ); ?></p>
+		</div>
+</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-price">
-	<?php echo CFS()->get( 'price' ); ?>
-	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>

@@ -506,7 +506,7 @@ a {
 .main-navigation a {
   display: block;
   text-decoration: none;
-  color: #fff; }
+  color: #248a83; }
 
 .main-navigation .menu {
   display: -webkit-box;
@@ -572,15 +572,20 @@ a {
   .main-navigation .menu_item a:active {
     color: white; }
   .main-navigation .search-input {
-    display: none; }
+    width: 0px;
+    border: 0; }
     .main-navigation .search-input input {
       background-color: rgba(255, 255, 255, 0);
       border: none;
       width: 100px; }
 
+.show {
+  width: 200px;
+  height: 30px; }
+
 .fa-search {
   padding-top: 10px;
-  color: white; }
+  color: #248a83; }
 
 .tent-logo {
   height: 33px;
@@ -953,6 +958,97 @@ h1.entry-title {
   color: #fff;
   cursor: pointer; }
 
+.taxonomy-product-title {
+  margin-bottom: 50px; }
+
+.page-title {
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web', sans-serif; }
+
+.page-header.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .page-header.container p {
+    text-align: center;
+    font-family: 'Merriweather Web', serif;
+    border-bottom: 1px dashed #e1e1e1;
+    margin-bottom: 50px;
+    padding-bottom: 50px; }
+
+.single-product .site-content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+
+.single-product-entry-content {
+  margin-left: 50px;
+  margin-top: -40px;
+  font-family: 'Merriweather Web', serif; }
+
+.single-product .hentry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0; }
+
+.single-product-title h1.entry-title {
+  color: #d99054;
+  font-family: 'Novecento Sans Web',sans-serif;
+  text-transform: uppercase; }
+
+.thumbnail-image .size-large {
+  width: 2000px;
+  height: auto; }
+
+.social-media-btn .single-page-btn {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 0; }
+
+.social-media-btn a:hover {
+  background-color: #248a83;
+  color: #fff;
+  cursor: pointer; }
+
+.findus-content h1.entry-title {
+  color: black;
+  padding-left: 35px;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 2.4rem; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #primary {
+    width: 75%;
+    height: 50%;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 20px; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary {
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 30px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget-title {
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .contact .contact-info {
+      font-family: 'Novecento Sans Web', sans-serif;
+      letter-spacing: 2px; }
+
+.findus-content .entry-content h2 {
+  font-family: 'Novecento Sans Web', sans-serif;
+  letter-spacing: 2px; }
+
+.findus-content p {
+  font-family: 'Merriweather Web', serif; }
+
 .site-footer {
   background-image: url("../../images/dark-wood@2x.png");
   color: #fff;
@@ -997,7 +1093,8 @@ h1.entry-title {
   border-bottom: 0;
   color: #248a83;
   position: fixed;
-  text-shadow: 1px 1px 2px #323232; }
+  text-shadow: 1px 1px 2px #323232;
+  border-bottom: 1px solid #e1e1e1; }
 
 .cover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat top;
@@ -1039,8 +1136,20 @@ h1.entry-title {
           justify-content: space-between; }
 
 .site-content .featured-posts .post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 300px;
-  height: 400px;
   margin-top: 5px;
   font-size: 16px;
   border: 1px solid #e1e1e1;
@@ -1048,6 +1157,9 @@ h1.entry-title {
   margin-left: 5px; }
   .site-content .featured-posts .post h3 {
     text-decoration: none; }
+  .site-content .featured-posts .post .black-btn {
+    margin-top: auto;
+    margin-bottom: 15px; }
 
 .post a {
   text-decoration: none;
@@ -1216,7 +1328,7 @@ h1.entry-title {
     margin-bottom: 15px; }
     .adventures .big-mountain h3 {
       color: #fff;
-      font-size: 35px;
+      font-size: 30px;
       padding: 0.5rem;
       font-family: 'Merriweather Web', serif;
       font-weight: 400; }

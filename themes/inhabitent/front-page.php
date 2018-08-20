@@ -8,6 +8,7 @@
 get_header()?>
 
 
+
 <div class="cover">
   <img class="hero-logo" src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-full.svg" alt="inhabitent-logo">
 </div>
@@ -40,7 +41,7 @@ get_header()?>
 <ul class="featured-posts">
 <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
 <li class="post">
-      <?php the_post_thumbnail() ?>
+      <?php the_post_thumbnail('large') ?>
       <p><?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?></p> 
       <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
       <a class="black-btn" href="<?php the_permalink(); ?>">READ ENTRY</a>

@@ -204,3 +204,116 @@ h1.entry-title {
     cursor: pointer; 
   }
 }
+
+// taxonomy pages 
+.taxonomy-product-title {
+  margin-bottom: 50px; 
+}
+.page-title {
+  text-transform: uppercase; 
+  font-family: 'Novecento Sans Web', sans-serif;
+}
+.page-header.container {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1120px; 
+  p {
+    text-align: center; 
+    font-family: 'Merriweather Web', serif;
+    border-bottom: 1px dashed #e1e1e1; 
+    margin-bottom: 50px;
+    padding-bottom: 50px; 
+  }
+}
+
+//individual product pages 
+.single-product .site-content {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1120px; 
+}
+.single-product-entry-content{
+  margin-left: 50px; 
+  margin-top: -40px; 
+  font-family: 'Merriweather Web', serif;
+}
+.single-product .hentry {
+  display: flex; 
+  margin: 100px 0; 
+}
+
+.single-product-title h1.entry-title {
+  color: #d99054;
+  font-family: 'Novecento Sans Web',sans-serif;
+  text-transform: uppercase; 
+}
+
+.thumbnail-image .size-large {
+  width: 2000px;
+  height: auto; 
+  }
+.social-media-btn {
+  .single-page-btn {
+    background-color: #fff;
+    border: 1px solid #000; 
+    color: #000;
+    border-radius: 0; 
+  }
+  a:hover {
+    background-color: #248a83;
+    color: #fff;
+    cursor: pointer; 
+  }
+}
+
+//find us 
+.findus-content {
+  h1.entry-title {
+    color: black; 
+    padding-left: 35px; 
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 2.4rem; 
+  }
+}
+
+//side-bar 
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: flex; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 1120px; 
+  #primary {
+    width: 75%; 
+    height: 50%;
+    border-right: 1px solid #e1e1e1; 
+    padding-right: 20px; 
+  }
+  #secondary {
+    width: 30%; 
+    margin-top: 30px;
+    padding-left: 30px;
+    .widget-title {
+      font-family:  'Novecento Sans Web', sans-serif;
+      text-transform: uppercase; 
+      letter-spacing: 2px; 
+    }
+    .contact{
+      .contact-info {
+        font-family: 'Novecento Sans Web', sans-serif;
+        letter-spacing: 2px; 
+      }
+    }
+  }
+}
+.findus-content {
+  .entry-content h2{
+    font-family: 'Novecento Sans Web', sans-serif;
+    letter-spacing: 2px; 
+  }
+  p {
+    font-family: 'Merriweather Web', serif;
+  }
+}
+
+
