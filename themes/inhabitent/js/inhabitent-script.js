@@ -1,12 +1,15 @@
-jQuery(document).ready(function( $ ) {
-
+(function($){
+  
 	
-  $('fas fa-search').on('click', function() {
-    $('.form-search .search-input').addClass('show');
-    $('.form-search .search-input').focus(); 
+  $('.main-navigation .icon-search').on('click', function(event) {
+    event.preventDefault();
+    console.log('click')
+    $('.main-navigation .search-field').addClass('show');
+    $('.main-navigation .search-field').focus(); 
   });
-  $('.form-search .search-input').on('blur', function(){
-    $('.form-search .search-input').removeClass('show');
+
+  $('.main-navigation .search-field').on('blur', function(){
+    $('.main-navigation .search-field').removeClass('show');
   });
 
   
@@ -18,4 +21,5 @@ jQuery(document).ready(function( $ ) {
 
  // $('input-field-class').on('blur', function(){})
 
-});
+
+})(jQuery);

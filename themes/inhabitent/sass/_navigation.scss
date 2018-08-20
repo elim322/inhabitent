@@ -83,7 +83,6 @@ a {
 		}
 	}
 	a {
-		display: block;
 		text-decoration: none;
 		color: #248a83;
 	}
@@ -144,7 +143,7 @@ a {
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  width: 70%;
+  width: 90%;
 	text-transform: uppercase;
 	margin-left: auto;
 	margin-right: auto; 
@@ -166,14 +165,30 @@ a {
     }
   }
 }
-.show {
-	width: 200px; 
-	height: 30px; 
-}
+
+
+
 .fa-search {
 	padding-top: 10px;
 	color: #248a83;
 }
+
+.site-header .search-submit {
+	display: none;
+}
+
+.site-header .search-field {
+	width: 0;
+	transition: .5s;
+	border: none; 
+	// opacity: 0;
+	&.show {
+		width: 200px; 
+		height: 15px; 
+		border: none; 
+	}
+}
+
 .tent-logo {
 	height: 33px;
 	margin-right: 10%;

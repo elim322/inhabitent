@@ -1,22 +1,13 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
-// home page 
-.site-header {
-  background-color: rgba(255, 255, 255, 0.5); 
-  border-bottom: 1px solid #e1e1e1; 
-    padding: 0;
-    position: fixed;
-    transition: top .5s linear;
-    width: 100%;
-    z-index: 3;
-  .container {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-  }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
+// home page 
 //about 
 .entry-header.hero-image-header {
   height: 100vh; 
@@ -44,6 +35,9 @@ h1.entry-title {
 
 
 //product page (shop-stuff)
+.page-header h1 {
+  padding-top: 30px; 
+}
 .links {
   display: flex; 
   justify-content: space-around;
@@ -225,6 +219,12 @@ h1.entry-title {
     padding-bottom: 50px; 
   }
 }
+.tax-product_type {
+  #primary {
+    flex-grow: 1; 
+    border: none; 
+  }
+}
 
 //individual product pages 
 .single-product .site-content {
@@ -286,13 +286,14 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   #primary {
     width: 75%; 
     height: 50%;
-    border-right: 1px solid #e1e1e1; 
+    
     padding-right: 20px; 
   }
   #secondary {
     width: 30%; 
     margin-top: 30px;
     padding-left: 30px;
+    border-left: 1px solid #e1e1e1; 
     .widget-title {
       font-family:  'Novecento Sans Web', sans-serif;
       text-transform: uppercase; 
@@ -317,3 +318,4 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 }
 
 
+//404 page 

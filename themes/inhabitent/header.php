@@ -33,12 +33,21 @@
 				</div>
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class="form-search">
+				
+
+					<?php get_search_form(); ?>
+				
+
+					<!-- <div class="form-search">
+					
+					
 					<form class="search">
 						<i class="fas fa-search" href="#"></i>
 						<input class="search-input" type="text"></input>
 						</form>
-					</div>
+
+
+					</div> -->
 				</nav><!-- #site-navigation -->
 				</div>
 			</header><!-- #masthead -->
