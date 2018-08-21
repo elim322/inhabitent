@@ -35,6 +35,9 @@ h1.entry-title {
 
 
 //product page (shop-stuff)
+.shop-header .reverse-header {
+  margin-top: -23px; 
+}
 .page-header h1 {
   padding-top: 30px; 
 }
@@ -147,6 +150,17 @@ h1.entry-title {
   width: 1120px;
   flex-direction: column;
 }
+.single-posts-content .entry-footer {
+  .cat-links {
+    margin-right: 10px; 
+    font-size: 16px; 
+    text-transform: uppercase; 
+  }
+  .tags-links {
+    font-size: 16px; 
+    text-transform: uppercase; 
+  }
+}
 .single-posts-content {
   width: 73%;
   .entry-header {
@@ -198,6 +212,13 @@ h1.entry-title {
     cursor: pointer; 
   }
 }
+.comment-form-comment {
+  display: flex; 
+  flex-direction: column; 
+}
+textarea {
+  width: 65%;
+}
 
 // taxonomy pages 
 .taxonomy-product-title {
@@ -214,7 +235,7 @@ h1.entry-title {
   p {
     text-align: center; 
     font-family: 'Merriweather Web', serif;
-    border-bottom: 1px dashed #e1e1e1; 
+    border-bottom: 1px dashed #c8c8c8; 
     margin-bottom: 50px;
     padding-bottom: 50px; 
   }
@@ -305,6 +326,16 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
         letter-spacing: 2px; 
       }
     }
+    .widget_archive ul{
+      list-style: none; 
+      margin-left: 0; 
+      padding-left: 0; 
+      a {
+        color: #248a83;
+        text-decoration: none; 
+      }
+   
+    }
   }
 }
 .findus-content {
@@ -319,3 +350,78 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
 
 
 //404 page 
+.error404-recent-posts .widget_recent_entries {
+  ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0;
+    a {
+      text-decoration: none; 
+      color: #248a83;
+      font-family: 'Merriweather Web', serif; 
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }  
+  .widgettitle {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  } 
+}
+.error404-categories .widget_categories {
+  ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0;
+    a {
+      text-decoration: none; 
+      color: #248a83;
+      font-family: 'Merriweather Web', serif; 
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }   
+  .widget-title {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+.error-404 .fa-search {
+  display: none; 
+}
+.error-404 .search-submit {
+  display: none; 
+}
+.error-404 .search-field {
+  width: 200;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; 
+  color: #666;
+  font-family: 'Merriweather Web',serif;
+}
+.error404-archives .widget_archive {
+  .widgettitle {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: 'Merriweather Web', serif; 
+  }
+}
+
+//search results page 
+.search-results .entry-header .entry-title {
+  a{
+    text-decoration: none; 
+    color: #248a83;
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+  }
+  p {
+    font-family: 'Merriweather Web', serif; 
+  }
+}

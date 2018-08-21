@@ -101,6 +101,7 @@ function red_starter_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_filter( 'comment_form_logged_in', '__return_empty_string' );
 
 /**
  * Custom template tags for this theme.

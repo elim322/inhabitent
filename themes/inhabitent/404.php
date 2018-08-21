@@ -19,12 +19,15 @@ get_header(); ?>
 
 				<div class="page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
-
-					<?php get_search_form(); ?>
-
+					<label>
+			<input type="search" class="search-field" placeholder="Type and hit enter..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		</label>
+				<div class="error404-recent-posts">
 					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+				</div>
 
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
+					<div class="error404-categories">
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
 						<ul>
@@ -40,11 +43,12 @@ get_header(); ?>
 						</ul>
 					</div><!-- .widget -->
 					<?php endif; ?>
-
+					<div class="error404-archives">
 					<?php
 						$archive_content = '<p>' . sprintf( esc_html( 'Try looking in the monthly archives. %1$s' ), convert_smilies( ':)' ) ) . '</p>';
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
+					</div>
 
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
