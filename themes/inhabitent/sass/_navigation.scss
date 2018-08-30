@@ -84,7 +84,7 @@ a {
 	}
 	a {
 		text-decoration: none;
-		color: #248a83;
+		color: white;
 	}
 
 	.current_page_item > a,
@@ -150,7 +150,7 @@ a {
     padding: 15px;
     text-transform: uppercase;
 		color: white; 
-		font-family: 'Novecento Sans', serif; 
+		font-family: 'Novecento Sans Web', serif; 
   }
   .menu_item a:active {
     color: white; 
@@ -168,9 +168,9 @@ a {
 
 
 
-.fa-search {
+.reverse-header .fa-search {
 	padding-top: 10px;
-	color: #248a83;
+	color: #fff;
 }
 
 .site-header .search-submit {
