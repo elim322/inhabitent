@@ -1418,7 +1418,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       color: #fff;
       font-size: 35px;
       padding: 0.5rem;
-      font-family: 'Merriweather Web', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 400;
       margin: 0; }
   .adventures .column2 {
@@ -1443,7 +1443,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       color: #fff;
       font-size: 35px;
       padding: 0.5rem;
-      font-family: 'Merriweather Web', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 400; }
   .adventures .big-mountain {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/mountain-hikers.jpg");
@@ -1459,7 +1459,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       color: #fff;
       font-size: 30px;
       padding: 0.5rem;
-      font-family: 'Merriweather Web', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 400; }
   .adventures .star-gazing {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../../images/adventure-photos/night-sky.jpg");
@@ -1475,7 +1475,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       color: #fff;
       font-size: 35px;
       padding: 0.5rem;
-      font-family: 'Merriweather Web', serif;
+      font-family: 'Merriweather', serif;
       font-weight: 400; }
   .adventures .adventures-button {
     border: 1px solid #e1e1e1;
@@ -1484,3 +1484,5 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     color: #fff;
     padding: .75rem 1.5rem;
     margin-left: 7px; }
+    .adventures .adventures-button:hover {
+      background-color: #3C605D; }
