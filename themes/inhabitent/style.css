@@ -1194,7 +1194,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   font-size: .7rem; }
 
 .site-header {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   border-bottom: 1px solid #e1e1e1;
   padding: 0;
   position: fixed;
