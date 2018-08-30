@@ -130,14 +130,14 @@ h1.entry-title {
     bottom: 12px;
     color: #fff;
     display: inline-block;
-    font-family: Novecento Sans Web,sans-serif;
+    font-family: 'Novecento Sans Web', sans-serif;
     padding: 1.00005rem 1.5rem;
     position: absolute;
     right: 0;
     text-transform: uppercase; 
   }
   p {
-    font-family: 'Merriweather Web', serif;
+    font-family: 'Merriweather', serif;
   }
 }
 
@@ -196,7 +196,7 @@ h1.entry-title {
     text-transform: uppercase; 
   }
   .entry-content p {
-    font-family: 'Merriweather Web', serif;
+    font-family: 'Merriweather', serif;
   }
 }
 .social-buttons {
@@ -234,7 +234,7 @@ textarea {
   width: 1120px; 
   p {
     text-align: center; 
-    font-family: 'Merriweather Web', serif;
+    font-family: 'Merriweather', serif;
     border-bottom: 1px dashed #c8c8c8; 
     margin-bottom: 50px;
     padding-bottom: 50px; 
@@ -256,7 +256,7 @@ textarea {
 .single-product-entry-content{
   margin-left: 50px; 
   margin-top: -40px; 
-  font-family: 'Merriweather Web', serif;
+  font-family: 'Merriweather', serif;
 }
 .single-product .hentry {
   display: flex; 
@@ -344,7 +344,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     letter-spacing: 2px; 
   }
   p {
-    font-family: 'Merriweather Web', serif;
+    font-family: 'Merriweather', serif;
   }
 }
 
@@ -358,7 +358,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     a {
       text-decoration: none; 
       color: #248a83;
-      font-family: 'Merriweather Web', serif; 
+      font-family: 'Merriweather', serif; 
       font-size: 1rem;
       line-height: 1.75;
     }
@@ -377,7 +377,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     a {
       text-decoration: none; 
       color: #248a83;
-      font-family: 'Merriweather Web', serif; 
+      font-family: 'Merriweather', serif; 
       font-size: 1rem;
       line-height: 1.75;
     }
@@ -399,7 +399,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1; 
   color: #666;
-  font-family: 'Merriweather Web',serif;
+  font-family: 'Merriweather',serif;
 }
 .error404-archives .widget_archive {
   .widgettitle {
@@ -408,7 +408,7 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     text-transform: uppercase;
   }
   p {
-    font-family: 'Merriweather Web', serif; 
+    font-family: 'Merriweather', serif; 
   }
 }
 
@@ -422,6 +422,6 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     text-transform: uppercase; 
   }
   p {
-    font-family: 'Merriweather Web', serif; 
+    font-family: 'Merriweather', serif; 
   }
 }
