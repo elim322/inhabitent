@@ -595,6 +595,16 @@ a {
     height: 15px;
     border: none; }
 
+.reverse-header .search-field {
+  width: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: none; }
+  .reverse-header .search-field.show {
+    width: 200px;
+    height: 15px;
+    border: none; }
+
 .tent-logo {
   height: 33px;
   margin-right: 10%;

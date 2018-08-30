@@ -3,13 +3,23 @@
 	
   $('.main-navigation .icon-search').on('click', function(event) {
     event.preventDefault();
-    console.log('click')
     $('.main-navigation .search-field').addClass('show');
     $('.main-navigation .search-field').focus(); 
   });
 
   $('.main-navigation .search-field').on('blur', function(){
     $('.main-navigation .search-field').removeClass('show');
+  });
+
+  $('.reverse-header .main-navigation .icon-search').on('click', function(event) {
+    event.preventDefault();
+    console.log('click');
+    $('.reverse-header .main-navigation .search-field').addClass('show');
+    $('.reverse-header .main-navigation .search-field').focus(); 
+  });
+
+  $('.reverse-header .main-navigation .search-field').on('blur', function(){
+    $('.reverse-header .main-navigation .search-field').removeClass('show');
   });
 
   

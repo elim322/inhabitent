@@ -181,7 +181,16 @@ a {
 	width: 0;
 	transition: .5s;
 	border: none; 
-	// opacity: 0;
+	&.show {
+		width: 200px; 
+		height: 15px; 
+		border: none; 
+	}
+}
+.reverse-header .search-field {
+	width: 0;
+	transition: .5s;
+	border: none; 
 	&.show {
 		width: 200px; 
 		height: 15px; 
