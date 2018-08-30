@@ -836,7 +836,7 @@ h1.entry-title {
   border: 1px solid #e1e1e1; }
 
 .size-large {
-  height: 250px;
+  height: auto;
   width: 100%;
   overflow: hidden;
   border-bottom: 5px solid #e1e1e1; }
