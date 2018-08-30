@@ -841,7 +841,8 @@ h1.entry-title {
   .links a {
     color: #248a83;
     text-decoration: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', serif; }
 
 .product-grid {
   display: grid;

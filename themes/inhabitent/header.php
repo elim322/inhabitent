@@ -35,9 +35,16 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<?php if(is_page_template("about.php") || is_front_page()):?>
 				<div class="tent-logo">
+					<a href="<?php echo home_url() ?>"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-tent-white.svg"></a>
+				</div>
+					<?php else: ?>
+					<div class="tent-logo">
 					<a href="<?php echo home_url() ?>"><img src="<?php echo get_template_directory_uri() ?>/logos/inhabitent-logo-tent.svg"></a>
 				</div>
+					<?php endif; ?>
+
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				

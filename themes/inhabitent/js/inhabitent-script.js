@@ -1,25 +1,26 @@
 (function($){
   
 	
-  $('.main-navigation .icon-search').on('click', function(event) {
-    event.preventDefault();
-    $('.main-navigation .search-field').addClass('show');
-    $('.main-navigation .search-field').focus(); 
-  });
-
-  $('.main-navigation .search-field').on('blur', function(){
-    $('.main-navigation .search-field').removeClass('show');
-  });
-
-  $('.reverse-header .main-navigation .icon-search').on('click', function(event) {
+  $('.site-header .main-navigation .icon-search').on('click', function(event) {
     event.preventDefault();
     console.log('click');
-    $('.reverse-header .main-navigation .search-field').addClass('show');
-    $('.reverse-header .main-navigation .search-field').focus(); 
+    $('.site-header .main-navigation .search-field').addClass('show');
+    $('.site-header .main-navigation .search-field').focus(); 
   });
 
-  $('.reverse-header .main-navigation .search-field').on('blur', function(){
-    $('.reverse-header .main-navigation .search-field').removeClass('show');
+  $('.site-header .main-navigation .search-field').on('blur', function(){
+    $('.site-header .main-navigation .search-field').removeClass('show');
+  });
+
+  $('.site-header .reverse-header .main-navigation .icon-search').on('click', function(event) {
+    event.preventDefault();
+  
+    $('.site-header .reverse-header .main-navigation .search-field').addClass('show');
+    $('.site-header .reverse-header .main-navigation .search-field').focus(); 
+  });
+
+  $('.site-header .reverse-header .main-navigation .search-field').on('blur', function(){
+    $('.site-header .reverse-header .main-navigation .search-field').removeClass('show');
   });
 
   
