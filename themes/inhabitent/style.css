@@ -581,6 +581,8 @@ a {
 .reverse-header .fa-search {
   padding-top: 10px;
   color: #fff; }
+  .reverse-header .fa-search:hover {
+    color: #EEE4D3; }
 
 .site-header .search-submit {
   display: none; }
@@ -604,6 +606,9 @@ a {
   margin-right: 10%;
   overflow: hidden;
   white-space: nowrap; }
+
+.reverse-header .main-navigation .tent-logo a img:hover {
+  color: #EEE4D3; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1231,6 +1236,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   .reverse-header .main-navigation a {
     color: #fff;
     font-family: 'Novecento Sans Web', serif; }
+    .reverse-header .main-navigation a:hover {
+      color: #EEE4D3; }
 
 .cover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat top;

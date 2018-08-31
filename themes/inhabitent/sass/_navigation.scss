@@ -171,6 +171,9 @@ a {
 .reverse-header .fa-search {
 	padding-top: 10px;
 	color: #fff;
+	&:hover {
+		color: #EEE4D3;
+	}
 }
 
 .site-header .search-submit {
@@ -197,4 +200,9 @@ a {
 	margin-right: 10%;
 	overflow: hidden;
 	white-space: nowrap;
+}
+.reverse-header .main-navigation .tent-logo a img {
+	&:hover {
+		color: #EEE4D3;
+	}
 }

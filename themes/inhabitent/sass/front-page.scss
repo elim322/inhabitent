@@ -28,6 +28,9 @@
     a {
       color: #fff;
       font-family: 'Novecento Sans Web', serif;
+      &:hover {
+        color: #EEE4D3;
+      }
     }
   }
   .search-field {
