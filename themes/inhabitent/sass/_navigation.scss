@@ -181,23 +181,16 @@ a {
 	width: 0;
 	transition: .5s;
 	border: none; 
+	opacity: 0;
 	&.show {
 		width: 200px; 
 		height: 15px; 
-		border: none; 
+		border: none;
+		opacity: 1;  
+		background-color: transparent; 
+		color: #EEE4D3;
 	}
 }
-.reverse-header .search-field {
-	width: 0;
-	transition: .5s;
-	border: none; 
-	&.show {
-		width: 200px; 
-		height: 15px; 
-		border: none; 
-	}
-}
-
 
 .tent-logo {
 	height: 33px;

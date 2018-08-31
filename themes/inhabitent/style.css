@@ -589,21 +589,15 @@ a {
   width: 0;
   -webkit-transition: .5s;
   transition: .5s;
-  border: none; }
+  border: none;
+  opacity: 0; }
   .site-header .search-field.show {
     width: 200px;
     height: 15px;
-    border: none; }
-
-.reverse-header .search-field {
-  width: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border: none; }
-  .reverse-header .search-field.show {
-    width: 200px;
-    height: 15px;
-    border: none; }
+    border: none;
+    opacity: 1;
+    background-color: transparent;
+    color: #EEE4D3; }
 
 .tent-logo {
   height: 33px;
@@ -867,6 +861,8 @@ h1.entry-title {
     text-decoration: none;
     color: black;
     font-size: 16px; }
+  .product-info p {
+    font-size: 0.8rem; }
 
 .page-header h1 {
   text-align: center; }
@@ -1224,7 +1220,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .site-header .main-navigation a {
-    color: #248a83; }
+    color: #248a83;
+    font-family: 'Novecento Sans Web', serif; }
 
 .reverse-header {
   background-color: transparent;
@@ -1234,8 +1231,6 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
   .reverse-header .main-navigation a {
     color: #fff;
     font-family: 'Novecento Sans Web', serif; }
-  .reverse-header .search-field {
-    display: none; }
 
 .cover {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), #969696 url("../../images/home-hero.jpg") no-repeat top;

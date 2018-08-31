@@ -12,16 +12,16 @@
     $('.site-header .main-navigation .search-field').removeClass('show');
   });
 
-  $('.site-header .reverse-header .main-navigation .icon-search').on('click', function(event) {
-    event.preventDefault();
+  // $('.site-header .reverse-header .main-navigation .icon-search').on('click', function(event) {
+  //   event.preventDefault();
   
-    $('.site-header .reverse-header .main-navigation .search-field').addClass('show');
-    $('.site-header .reverse-header .main-navigation .search-field').focus(); 
-  });
+  //   $('.site-header .reverse-header .main-navigation .search-field').addClass('show');
+  //   $('.site-header .reverse-header .main-navigation .search-field').focus(); 
+  // });
 
-  $('.site-header .reverse-header .main-navigation .search-field').on('blur', function(){
-    $('.site-header .reverse-header .main-navigation .search-field').removeClass('show');
-  });
+  // $('.site-header .reverse-header .main-navigation .search-field').on('blur', function(){
+  //   $('.site-header .reverse-header .main-navigation .search-field').removeClass('show');
+  // });
 
   
 
