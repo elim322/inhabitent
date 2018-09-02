@@ -1,0 +1,49 @@
+//side-bar 
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: flex; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 1120px; 
+  #primary {
+    width: 75%; 
+    height: 50%;
+    
+    padding-right: 20px; 
+  }
+  #secondary {
+    width: 30%; 
+    margin-top: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #e1e1e1; 
+    .widget-title {
+      font-family:  'Novecento Sans Web', sans-serif;
+      text-transform: uppercase; 
+      letter-spacing: 2px; 
+    }
+    .contact{
+      .contact-info {
+        font-family: 'Novecento Sans Web', sans-serif;
+        letter-spacing: 2px; 
+      }
+    }
+    .widget_archive ul{
+      list-style: none; 
+      margin-left: 0; 
+      padding-left: 0; 
+      a {
+        color: #248a83;
+        text-decoration: none; 
+      }
+   
+    }
+  }
+}
+.findus-content {
+  .entry-content h2{
+    font-family: 'Novecento Sans Web', sans-serif;
+    letter-spacing: 2px; 
+  }
+  p {
+    font-family: 'Merriweather', serif;
+  }
+}

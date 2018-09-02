@@ -1367,3 +1367,150 @@ textarea {
   padding-left: 35px;
   font-family: 'Novecento Sans Web', sans-serif;
   font-size: 2.4rem; }
+
+body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #primary {
+    width: 75%;
+    height: 50%;
+    padding-right: 20px; }
+  body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary {
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #e1e1e1; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget-title {
+      font-family: 'Novecento Sans Web', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .contact .contact-info {
+      font-family: 'Novecento Sans Web', sans-serif;
+      letter-spacing: 2px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget_archive ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0; }
+      body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget_archive ul a {
+        color: #248a83;
+        text-decoration: none; }
+
+.findus-content .entry-content h2 {
+  font-family: 'Novecento Sans Web', sans-serif;
+  letter-spacing: 2px; }
+
+.findus-content p {
+  font-family: 'Merriweather', serif; }
+
+.error404-recent-posts .widget_recent_entries ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .error404-recent-posts .widget_recent_entries ul a {
+    text-decoration: none;
+    color: #248a83;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.75; }
+
+.error404-recent-posts .widget_recent_entries .widgettitle {
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.error404-categories .widget_categories ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+  .error404-categories .widget_categories ul a {
+    text-decoration: none;
+    color: #248a83;
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+    line-height: 1.75; }
+
+.error404-categories .widget_categories .widget-title {
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.error-404 .fa-search {
+  display: none; }
+
+.error-404 .search-submit {
+  display: none; }
+
+.error-404 .search-field {
+  width: 200;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1;
+  color: #666;
+  font-family: 'Merriweather',serif; }
+
+.error404-archives .widget_archive .widgettitle {
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.error404-archives .widget_archive p {
+  font-family: 'Merriweather', serif; }
+
+.search-results .entry-header .entry-title a {
+  text-decoration: none;
+  color: #248a83;
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.search-results .entry-header .entry-title p {
+  font-family: 'Merriweather', serif; }
+
+.taxonomy-product-title {
+  margin-bottom: 50px; }
+
+.page-title {
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web', sans-serif; }
+
+.page-header.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
+  .page-header.container p {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    border-bottom: 1px dashed #c8c8c8;
+    margin-bottom: 50px;
+    padding-bottom: 50px; }
+
+.tax-product_type #primary {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: none; }
+
+.page-template-about .entry-header .hero-image-header {
+  margin-top: -23px;
+  height: 100vh; }
+
+h1.entry-title {
+  color: #fff;
+  font-size: 3rem; }
+
+.page-template-about .entry-content h2 {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Novecento Sans Web', serif;
+  text-transform: uppercase; }
+
+.page-template-about .entry-content p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  font-family: 'Merriweather', serif;
+  line-height: 1.75;
+  font-size: 1rem; }

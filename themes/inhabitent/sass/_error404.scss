@@ -1,0 +1,62 @@
+//404 page 
+.error404-recent-posts .widget_recent_entries {
+  ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0;
+    a {
+      text-decoration: none; 
+      color: #248a83;
+      font-family: 'Merriweather', serif; 
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }  
+  .widgettitle {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  } 
+}
+.error404-categories .widget_categories {
+  ul {
+    list-style: none;
+    margin-left: 0; 
+    padding-left: 0;
+    a {
+      text-decoration: none; 
+      color: #248a83;
+      font-family: 'Merriweather', serif; 
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+  }   
+  .widget-title {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+}
+.error-404 .fa-search {
+  display: none; 
+}
+.error-404 .search-submit {
+  display: none; 
+}
+.error-404 .search-field {
+  width: 200;
+  background-color: #f4f4f4;
+  border: 1px solid #e1e1e1; 
+  color: #666;
+  font-family: 'Merriweather',serif;
+}
+.error404-archives .widget_archive {
+  .widgettitle {
+    font-family: 'Novecento Sans Web',sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: 'Merriweather', serif; 
+  }
+}

@@ -1,0 +1,26 @@
+// taxonomy pages 
+.taxonomy-product-title {
+  margin-bottom: 50px; 
+}
+.page-title {
+  text-transform: uppercase; 
+  font-family: 'Novecento Sans Web', sans-serif;
+}
+.page-header.container {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 1120px; 
+  p {
+    text-align: center; 
+    font-family: 'Merriweather', serif;
+    border-bottom: 1px dashed #c8c8c8; 
+    margin-bottom: 50px;
+    padding-bottom: 50px; 
+  }
+}
+.tax-product_type {
+  #primary {
+    flex-grow: 1; 
+    border: none; 
+  }
+}
