@@ -1439,6 +1439,8 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
       body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget_archive ul a {
         color: #248a83;
         text-decoration: none; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .day-of-week {
+      font-weight: bold; }
 
 .findus-content .entry-content h2 {
   font-family: 'Novecento Sans Web', sans-serif;
