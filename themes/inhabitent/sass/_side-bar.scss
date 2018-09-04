@@ -30,6 +30,9 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
         color: #248a83;
         padding-left: 10px; 
       }
+      a.address {
+        color: black;
+      }
     }
     .widget_archive ul{
       list-style: none; 
