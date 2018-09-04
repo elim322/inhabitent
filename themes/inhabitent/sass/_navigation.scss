@@ -173,12 +173,13 @@ a {
     position: fixed;
     transition: top .5s linear;
     width: 100%;
-    z-index: 3;
+		z-index: 3;
+		top: 0;
   .container {
     display: flex; 
     align-items: center; 
     justify-content: space-between; 
-  }
+	}
   .main-navigation{
     a {
       color: #248a83;
@@ -186,11 +187,14 @@ a {
     }
   }
 }
+.logged-in .reverse-header {
+	top: 30px; 
+}
 .reverse-header {
   background-color: transparent; 
   border-bottom: 0; 
   color: #fff;
-  position: fixed; 
+	position: fixed; 
   .main-navigation{
     a {
       color: #fff;
@@ -199,7 +203,7 @@ a {
         color: #EEE4D3;
       }
     }
-  }
+	}
 }
 .reverse-header .fa-search {
 	padding-top: 10px;

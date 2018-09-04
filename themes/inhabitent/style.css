@@ -586,7 +586,8 @@ a {
   -webkit-transition: top .5s linear;
   transition: top .5s linear;
   width: 100%;
-  z-index: 3; }
+  z-index: 3;
+  top: 0; }
   .site-header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -600,6 +601,9 @@ a {
   .site-header .main-navigation a {
     color: #248a83;
     font-family: 'Novecento Sans Web', serif; }
+
+.logged-in .reverse-header {
+  top: 30px; }
 
 .reverse-header {
   background-color: transparent;
@@ -1181,7 +1185,7 @@ button:focus {
   border: 1px solid #e1e1e1; }
 
 .size-large {
-  height: auto;
+  height: 200px;
   width: 100%;
   overflow: hidden;
   border-bottom: 5px solid #e1e1e1; }
