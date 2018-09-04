@@ -2,12 +2,12 @@
 A website based on WordPress CMS using a combination of PHP, JavaScript, jQuery, and HTML/CSS. The website includes multiple pages based on the WordPress heirarchy and consists of a combination of blog posts and product content.   
 
 ## Screenshots 
-![Screenshot](/screenshots/home-inhabitent?raw=true "Home Page")
-![Screenshot](/screenshots/front-page-inhabitent?raw=true "Front Page")
-![Screenshot](/screenshots/journal-inhabitent?raw=true "Journal Page")
-![Screenshot](/screenshots/shop-inhabitent?raw=true "Shop Page")
-![Screenshot](/screenshots/findus-inhabitent?raw=true "Find UsPage")
-![Screenshot](/screenshots/about-inhabitent?raw=true "About Page")
+![Screenshot](/inhabitent/screenshots/home-inhabitent?raw=true "Home Page")
+![Screenshot](/inhabitent/screenshots/front-page-inhabitent?raw=true "Front Page")
+![Screenshot](/inhabitent/screenshots/journal-inhabitent?raw=true "Journal Page")
+![Screenshot](/inhabitent/screenshots/shop-inhabitent?raw=true "Shop Page")
+![Screenshot](/inhabitent/screenshots/findus-inhabitent?raw=true "Find UsPage")
+![Screenshot](/inhabitent/screenshots/about-inhabitent?raw=true "About Page")
 
 
 ## Installation
