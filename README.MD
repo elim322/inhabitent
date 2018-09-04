@@ -2,12 +2,12 @@
 A website based on WordPress CMS using a combination of PHP, JavaScript, jQuery, and HTML/CSS. The website includes multiple pages based on the WordPress heirarchy and consists of a combination of blog posts and product content.   
 
 ## Screenshots 
-![Screenshot](/inhabitent/screenshots/home-inhabitent?raw=true "Home Page")
-![Screenshot](/inhabitent/screenshots/front-page-inhabitent?raw=true "Front Page")
-![Screenshot](/inhabitent/screenshots/journal-inhabitent?raw=true "Journal Page")
-![Screenshot](/inhabitent/screenshots/shop-inhabitent?raw=true "Shop Page")
-![Screenshot](/inhabitent/screenshots/findus-inhabitent?raw=true "Find UsPage")
-![Screenshot](/inhabitent/screenshots/about-inhabitent?raw=true "About Page")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/home-inhabitent.png?raw=true "Home Page")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/front-page-inhabitent.png?raw=true "Front Page")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/journal-inhabitent.png?raw=true "Journal Page")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/shop-inhabitent.png?raw=true "Shop Page")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/findus-inhabitent.png?raw=true "Find UsPage")
+![Screenshot](https://github.com/elim322/inhabitent/blob/master/themes/inhabitent/screenshots/home-inhabitent.png?raw=true "About Page")
 
 
 ## Installation
