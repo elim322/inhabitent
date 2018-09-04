@@ -1372,6 +1372,37 @@ textarea {
   font-family: 'Novecento Sans Web', sans-serif;
   font-size: 2.4rem; }
 
+.wpcf7-form .wpcf7-form-control {
+  background: #f4f4f4; }
+
+.wpcf7-form .input-title {
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase; }
+
+.wpcf7-form .wpcf7-submit {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #248a83;
+  text-shadow: none;
+  color: #fff;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: .9rem;
+  border-radius: 0;
+  text-transform: uppercase;
+  border: none; }
+  .wpcf7-form .wpcf7-submit:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #d99054; }
+
+.wpcf7-form .title {
+  font-size: 2.1rem;
+  font-family: 'Novecento Sans Web', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+  .wpcf7-form .title .red-dot {
+    color: red; }
+
 body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1395,6 +1426,10 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
     body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .contact .contact-info {
       font-family: 'Novecento Sans Web', sans-serif;
       letter-spacing: 2px; }
+    body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .contact a {
+      text-decoration: none;
+      color: #248a83;
+      padding-left: 10px; }
     body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content #secondary .widget_archive ul {
       list-style: none;
       margin-left: 0;

@@ -7,3 +7,38 @@
     font-size: 2.4rem; 
   }
 }
+
+.wpcf7-form {
+  .wpcf7-form-control {
+    background: #f4f4f4;
+  }
+  .input-title {
+     font-family: 'Novecento Sans Web', sans-serif;
+     text-transform: uppercase; 
+  }
+  .wpcf7-submit {
+    box-shadow: none; 
+    background: #248a83;
+    text-shadow: none; 
+    color: #fff;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: .9rem;
+    border-radius: 0;
+    text-transform: uppercase; 
+    border: none; 
+    &:hover {
+      box-shadow: none; 
+      color: #d99054;
+    }
+  }
+  .title {
+    font-size: 2.1rem; 
+    font-family: 'Novecento Sans Web', sans-serif;
+    text-transform: uppercase; 
+    font-weight: 700;
+    .red-dot {
+      color: red;
+    }
+    
+  }
+}

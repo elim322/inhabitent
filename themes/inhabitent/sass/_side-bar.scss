@@ -25,6 +25,11 @@ body:not(.home):not(.page-template-about):not(.post-type-archive):not(.tax-produ
         font-family: 'Novecento Sans Web', sans-serif;
         letter-spacing: 2px; 
       }
+      a {
+        text-decoration: none; 
+        color: #248a83;
+        padding-left: 10px; 
+      }
     }
     .widget_archive ul{
       list-style: none; 
